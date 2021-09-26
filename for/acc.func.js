@@ -37,23 +37,22 @@ function nabor(mass){
     //   Напиши функцию, которая принимает массив из имен. Функция должна вернуть новый массив с именами, которые начинаются либо на "а" либо на "у".
     
     function choic(array) {
-        let arrayNew = []
-        for(i=0; i<array.length; i++){
-            if(array[i][0] === 'а' || array[i][0] === 'у' ){
-                arrayNew.push(array[i])
-            }    
-        }
-        return arrayNew
-    }
+      let arrayNew = []
+      for(i=0; i<array.length; i++){
+          if(array[i][0] === 'а' || array[i][0] === 'у' ){
+              arrayNew.push(array[i])
+          }    
+      }
+      return arrayNew
+  }
 
-console.log(choic(['ty', 'tiptr', 'gh']))
-
+console.log(choic(['али', 'мамед', 'умар', 'ваха']))
 
 //   Допиши функцию deleteMessages так, чтобы она вовзращала новый массив, из которого удалены все объекты с ключами deleted равными true.
 
 
 function deleteMessages(array) {
-    let newAr
+    let newAr = []
     for(i=0; i<array.length; i++){
         if(array[i].deleted !== true ){
             newAr.push(array[i])
